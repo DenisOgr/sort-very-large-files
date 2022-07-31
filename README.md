@@ -1,14 +1,21 @@
 Project focus
 ------------
-This project is implementation of one of the popular task in Data Engineer interviews. 
+This project implements one of the prevalent tasks in Data Engineer interviews. 
 
 Task:
 We have a very large file with numbers.
-Need to sort numbers and store to the another single file.
-Main restrictions: size of the RAM is very small.
-For example, size of the input file equals to 3Gb, available RAM equals to 20Mb.
+Need to sort numbers and store another single file.
+Main restrictions: the size of the RAM is very small.
+For example, the size of the input file equals to 3Gb, available RAM equals to 20Mb.
 
 This task was resolved using [External sorting algo](https://en.wikipedia.org/wiki/External_sorting).
+
+Results
+------------
+This application was tested using a 3Gb input file and 20Mb of memory limits. 
+It takes 10 minutes for sorting file.
+With 100 Mb of memory limits, it takes ~ 3min.
+
 
 Requirements
 ------------
@@ -17,7 +24,7 @@ Requirements
 Installation
 ------------
 ```shell
-git clone 
+git clone git@github.com:DenisOgr/sort-very-large-files.git
 ```
 
 Run
@@ -36,3 +43,5 @@ For example:
 ```shell
 python main filename --mem_limit 20
 ```
+
+
